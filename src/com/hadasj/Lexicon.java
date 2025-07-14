@@ -1,5 +1,13 @@
 package com.hadasj;
 
+/**
+ * Rozdělení textu programem Lexicon:
+ * 1. počet písmen ve slově
+ * 2. vyloučení interpunkce
+ * 3. počítání slov (některá slova mohou být víckrát)
+ * 4. řazení podle délky slova, abecední řazení
+ * 5. Dělka věty - počet slov, počet písmen
+ */
 public class Lexicon {
 
 	private String text;
@@ -13,7 +21,7 @@ public class Lexicon {
 		String vystup = "";
 
 		for (final String slovo : slova) {
-			vystup += slovo + ": " + slovo.length() + "\n";
+			vystup += "\"" + slovo + "\" počet písmen: " + slovo.length() + "\n";
 		}
 
 		return vystup;
